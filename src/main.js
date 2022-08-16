@@ -1,6 +1,9 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import { } from './data/ghibli/ghibli.js';
 
-console.log(example, data);
+import data from './data/ghibli/ghibli.js';
+
+console.log(data);
+
+
+//tomar imagenes de posters para mostrarlas al usuario
+//tomar titulos y años de peliculas primer HU1
