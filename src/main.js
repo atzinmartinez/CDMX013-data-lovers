@@ -1,6 +1,17 @@
-import { example } from './data.js';
+import {} from './data/ghibli/ghibli.js';
+// import data from 
 // import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(example, data);
+
+import data from './data/ghibli/ghibli.js';
+
+let nameMovie = document.getElementById ("nameMovie");
+
+for 
+
+
+
+console.log(nameMovie);
+console.log(data.films[0].title);
+//console.log(data);
+//console.log ("correcto");
