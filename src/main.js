@@ -1,3 +1,4 @@
+
 import allData from './data/ghibli/ghibli.js';
 const history = document.getElementById("history")
 history.classList = "filmStyle"

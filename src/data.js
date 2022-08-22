@@ -1,7 +1,10 @@
 // estas funciones son de ejemplo
 
-export const producer = (productos) => {
-  return 'producer';
+export const datas = () => {
+  datas.forEach(posters => {
+ console.log (posters)   
+  });
+  
 };
 
 export const anotherExample = () => {
