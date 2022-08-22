@@ -13,6 +13,7 @@
     .logo{
         width: 325px;
         margin-left: 100px;
+        border: #9f1d13;
     }
     .button{
         transition-duration: 0.4s;
@@ -30,12 +31,43 @@
         color: white;
       }
 
-    
-    .imagen2{
-        left: 200px;
-        width: 350px;
-        height: 500px;
-       margin-left: 200px;
-        margin-top: 100px;
-        border-radius: 10px;
+      .poster{
+        width: 100%;
+        
+      }
+
+      .imagen{
+        width: 100%;
+      }
+
+    .filmStyle{
+        width: 100%;
+        display:grid;
+        justify-items: center;
+        place-items: center;
+        padding-top: 300px;
+        grid-auto-rows: 100%;   
+        grid-template-columns: [first] 300px [line2] 300px [line3] 300px [line4] 300px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: [row1-start] 400px [row1-end] 400px [third-line] 400px [last-line];        
+        gap: 20px;
     }
+
+    #history{
+      
+
+       
+}
+
+img{
+    size: ;
+}
+
+h4 {
+    color: rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+}
+h2{
+    color: rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+}
