@@ -19,13 +19,13 @@ body {
     border: #9f1d13;
 }
 
-.director {
+.menuDirector {
     color :#ffffff;
     transition-duration: 0.4s;
     position: absolute;
     width: 139px;
     height: 43px;
-    left: 558px;
+    left: 900px;
     top: 100px;
     background-color: transparent;
     font-size: 20px;
@@ -33,87 +33,26 @@ body {
     text-align: center;
     padding: 10px 24px;
     border: 0cm transparent;
-    
+    font-family: 'Sen', sans-serif;
 }
 
-.director:hover {
-    background-color: #ffffff;
-    /* Green */
-    color: rgb(0, 0, 0);
-}
 
-.productor {
+.menuRanking {
     color :#ffffff;
     transition-duration: 0.4s;
     position: absolute;
-    width: 157px;
+    width: 139px;
     height: 43px;
-    left: 712px;
+    left: 1150px;
     top: 100px;
     background-color: transparent;
     font-size: 20px;
     border-radius: 4px;
     text-align: center;
     padding: 10px 24px;
-    
+    border: 0cm transparent;
+    font-family: 'Sen', sans-serif;
 }
-
-.productor:hover {
-    background-color: #ffffff;
-    /* Green */
-    color: rgb(0, 0, 0);
-}
-
-.ranking {
-    color :#ffffff;
-    transition-duration: 0.4s;
-    position: absolute;
-    width: 157px;
-    height: 43px;
-    left: 884px;
-    top: 100px;
-    background-color: transparent;
-
-    font-size: 20px;
-    border-radius: 4px;
-    text-align: center;
-    padding: 10px 24px;
-}
-
-.ranking:hover {
-    background-color: #ffffff;
-    /* Green */
-    color: rgb(0, 0, 0);
-}
-
-.personajes {
-    color :#ffffff;
-    transition-duration: 0.4s;
-    position: absolute;
-    width: 186px;
-    height: 43px;
-    left: 1050px;
-    top: 100px;
-    background-color: transparent;
-    font-size: 20px;
-    border-radius: 4px;
-    text-align: center;
-    padding: 10px 24px;
-}
-
-.personajes:hover {
-    background-color: #ffffff;
-    /* Green */
-    color: rgb(0, 0, 0);
-}
-
-
-
-
-
-
-
-
 
 
 
