@@ -18,4 +18,25 @@ const generateHTML = (film) => {     //arrow function
 }
 film.forEach(oneFilm => history.appendChild(generateHTML(oneFilm)))
 
-console.log(film[0].title);
+
+
+const btnDirector= document.getElementById("director")
+btnDirector.addEventListener ("click", function() {
+   const firstDirector= film.filter (item=>item.director === "Hayao Miyazaki")
+   console.log(firstDirector)
+   const secondDirector= film.filter (item=>item.director === "Isao Takahata")
+   console.log(secondDirector)  })
+   //console.log (film[0].director)
+
+
+
+/*const btnDirector = document.getElementById ("director")
+
+btnDirector.addEventListener("click", function showDirector) // Escucha click (evento)
+
+  function showDirector (){
+
+        const director = document.createElement ("h1")
+    director.textContent = film.director
+    console.log(director)
+}9*/
