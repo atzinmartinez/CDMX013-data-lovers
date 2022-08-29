@@ -1,12 +1,26 @@
 // estas funciones son de ejemplo
-import film from './src/main.js'
- export const firstDirector= film.filter (item=>item.director === e.target.value);
-  console.log(firstDirector)
-  export const filterRanking = (director, data ) => data.filter (films => films.director == director);
+import allData from './data/ghibli/ghibli.js';
+const film = allData.films
+export const filterByDirector = (nameDirector)=>{
+  if (nameDirector == "Todos") { 
+  return film
 
+  } else {
+  return film.filter(item=>item.director === nameDirector)
+}
+}
 
-// ordenamiento Az Za , 
+export const filterDate = (filterDate)=>{
+  if (filterDate == "Escoger Fecha") { 
+  return film
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+  } else {
+  return film.filter(item=>item.release_date == "1989")
+  
+}
+
+}
+console.log (filterDate)
+
+// funciones
+
