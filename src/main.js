@@ -1,4 +1,4 @@
-import { filterByDirector, filterDate } from './data.js';
+import { filterByDirector, filterByDate } from './data.js';
 import allData from './data/ghibli/ghibli.js';
 
 //import {firstDirector} from './data.js'
@@ -24,26 +24,29 @@ const generateHTML = (film) => {     //arrow function
     div.append(poster, titleFilm, release_date)
     return div
 }
-film.forEach(oneFilm => container.appendChild(generateHTML(oneFilm))) //con la misma logica
-//empaquetar una funcion
+film.forEach(oneFilm => container.appendChild(generateHTML(oneFilm))) 
+
 
 
 const filterDirector = document.getElementById("filterDirector")
 filterDirector.addEventListener("click", function(director){
 container.innerHTML = ""
 filterByDirector (director.target.value).forEach(oneFilm => container.appendChild(generateHTML(oneFilm))) 
+console.log (director.target.value)
  })
 
- /*const ranking = document.createElement ("h1")
- ranking.textContent = film.rt_score */
+
+ // event target value
+ //manejo de objetos JS como accesar a sus propiedades
+
 
  const filterDate = document.getElementById("filterDate")
- filterDate.addEventListener("click", function(ranking){
-  //console.log ("Hola");
+ filterDate.addEventListener("click", function(realease){
+  
  container.innerHTML = ""
- filterByRanking (ranking.target.value).forEach(oneFilm => container.appendChild(generateHTML(oneFilm))) 
- 
+ filterByDate (realease.target.value).forEach(oneFilm => container.appendChild(generateHTML(oneFilm))) 
+ console.log (realease.target.value)
   })
 
- // DOM
- //rt_score
+ 
+
