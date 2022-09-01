@@ -2,7 +2,7 @@ import { filterByDirector, filterByDate } from './data.js';
 import allData from './data/ghibli/ghibli.js';
 
 //import {firstDirector} from './data.js'
-let hmtl =""
+
 const container = document.getElementById("container")
 container.classList = "filmStyle"
 const film = allData.films
@@ -31,7 +31,7 @@ film.forEach(oneFilm => container.appendChild(generateHTML(oneFilm)))
 const filterDirector = document.getElementById("filterDirector")
 filterDirector.addEventListener("click", function(director){
 container.innerHTML = ""
-filterByDirector (director.target.value).forEach(oneFilm => container.appendChild(generateHTML(oneFilm))) 
+filterByDirector (director.target.value, film).forEach(oneFilm => container.appendChild(generateHTML(oneFilm))) 
 console.log (director.target.value)
  })
 
@@ -44,7 +44,7 @@ console.log (director.target.value)
  filterDate.addEventListener("click", function(realease){
   
  container.innerHTML = ""
- filterByDate (realease.target.value).forEach(oneFilm => container.appendChild(generateHTML(oneFilm))) 
+ filterByDate (realease.target.value, film).forEach(oneFilm => container.appendChild(generateHTML(oneFilm))) 
  console.log (realease.target.value)
   })
 
