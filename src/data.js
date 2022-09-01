@@ -1,14 +1,16 @@
 // estas funciones son de ejemplo
-import allData from './data/ghibli/ghibli.js';
-const film = allData.films
-export const filterByDirector = (nameDirector)=>{
+
+export const filterByDirector = (nameDirector, films)=>{
   if (nameDirector == "Todos") { 
-  return film
+  return films
 
   } else {
-  return film.filter(item=>item.director === nameDirector)
+  return films.filter(item=>item.director === nameDirector)
+  
 }
+
 }
+
 
 
 // elementos mayores a 1980 un if 1980 else 1990 > 1980
@@ -18,11 +20,11 @@ export const filterByDirector = (nameDirector)=>{
 
 
 //recibe un año y nos regresa peliculas 
-export const filterByDate = (date)=> {
+export const filterByDate = (date, films)=> {
   if (date == "escogerFecha") { 
-    return film
+    return films
   } else {
-return film.filter (film => film.release_date <= date && film.release_date >= (date - 10) )
+return films.filter (film => film.release_date <= date && film.release_date >= (date - 9) )
 } }
 
 

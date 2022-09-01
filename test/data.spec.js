@@ -1,23 +1,44 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterByDirector, filterByDate } from '../src/data.js';
 
-
-describe('example', () => {
+describe('filterByDirector', () => {
+  const data= [
+    {director:"Hayao Miyazaki"}, {director:"Hiromasa Yonebayashi"} ]
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterByDirector).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('returns `peliculas con de cada director`', () => {
+    
+     
+      expect(filterByDirector ("Hayao Miyazaki", data)).toEqual([{director:"Hayao Miyazaki"}]); 
+      expect (filterByDirector("Hiromasa Yonebayashi", data)).toEqual([{director:"Hiromasa Yonebayashi"}]);
   });
-});
+    
+  it ("return allData", () => {
+    expect (filterByDirector ("Todos", data)).toHaveLength(2); // esperamos un 2
+    expect (filterByDirector ("Todos", data)).not.toHaveLength(3); // no esperamos un 3
+
+   
+
+  })});
 
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
+  
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
+
+  
+ 
+  describe ('filterByDate', () => {
+    //const decade = [ {release_date: "1986"}]
+    it ('is a function', () =>{
+      expect (typeof filterByDate).toBe("function");
+    })});
+  
+  
+  
+
+
+
+  
+
+
