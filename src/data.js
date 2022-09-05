@@ -1,31 +1,49 @@
-// estas funciones son de ejemplo
 
-export const filterByDirector = (nameDirector, films)=>{
-  if (nameDirector == "Todos") { 
-  return films
+export const filterByDirector = (nameDirector, allFilms)=>{
+  if (nameDirector == "allDirector") { 
+  return allFilms
 
   } else {
-  return films.filter(item=>item.director === nameDirector)
+  return allFilms.filter(oneDirector=>oneDirector.director === nameDirector)
   
 }
 
 }
 
-
-
-// elementos mayores a 1980 un if 1980 else 1990 > 1980
-// elementos mayores a 1990 un if 2000 else 2010
-// elementos mayores a 2000
-// elementos mayores a 2010
-
-
-//recibe un año y nos regresa peliculas 
-export const filterByDate = (date, films)=> {
-  if (date == "escogerFecha") { 
-    return films
+export const filterByDate = (date, allYears)=> {
+  if (date == "allDate") { 
+    return allYears
   } else {
-return films.filter (film => film.release_date <= date && film.release_date >= (date - 9) )
+return allYears.filter (oneDecade => oneDecade.release_date <= date && oneDecade.release_date >= (date - 9) )
 } }
+
+
+export const orderByRanking= (allFilms)=>{
+  if(allFilms == "menor"){
+    return allFilms.sort(((a,b)=> a.rt_score - b.rt_score))
+  } else if(allFilms=="mayor"){
+    return allFilms.sort(((a,b)=> b.rt_score + a.rt_score))
+  }
+  
+} 
+
+
+
+
+ /* declarar una constante con un nuevo array para no modificar el original .map
+ ya declarada se hace el ordenamiento de menor a mayor ranking
+
+/*export const orderRanking = (rankingOne,rankingTwo) => {
+  if (rankingOne== "boton"){
+    return film ""
+  } else {
+    return film.sort (film.rt_score>rankingOne)
+  }
+}
+*/
+
+//film.sort((a,b) => a.rt_score>b.rt_score ? 1 : -1 )
+
 
 
 
