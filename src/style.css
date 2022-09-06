@@ -16,11 +16,11 @@ body {
 .logo {
     width: 325px;
     margin-left: 100px;
-    border: #9f1d13;
+    border: #9F1D13;
 }
 
 .menuDirector {
-    color :#ffffff;
+    color: #ffffff;
     transition-duration: 0.4s;
     position: absolute;
     width: 139px;
@@ -37,7 +37,7 @@ body {
 }
 
 .menuDate {
-    color :#ffffff;
+    color: #ffffff;
     transition-duration: 0.4s;
     position: absolute;
     width: 139px;
@@ -53,6 +53,22 @@ body {
     font-family: 'Sen', sans-serif;
 }
 
+.menuRanking {
+    color: #ffffff;
+    transition-duration: 0.4s;
+    position: absolute;
+    width: 139px;
+    height: 43px;
+    left: 500px;
+    top: 100px;
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 24px;
+    border: 0cm transparent;
+    font-family: 'Sen', sans-serif;
+}
 
 .poster {
     display: grid;
@@ -79,12 +95,21 @@ body {
     gap: 20px;
 }
 
-
-
 h4 {
     color: rgb(0, 0, 0);
     font-family: 'Sen', sans-serif;
     font-size: 15px;
+}
+
+h5 {
+    color: rgb(0, 0, 0);
+    position: inherit;
+    left: 900px;
+    top: 100px;
+    font-family: 'Sen', sans-serif;
+    font-size: 20px;
+
+
 }
 
 h2 {
