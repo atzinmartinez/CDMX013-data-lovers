@@ -1,4 +1,4 @@
-// estas funciones son de ejemplo
+
 
 export const filterByDirector = (nameDirector, allFilms) => {
   if (nameDirector == "allDirector") {
@@ -25,5 +25,4 @@ export const orderByRanking = (allRanking, allFilms) => {
     return allFilms.sort(((a, b) => b.rt_score - a.rt_score))
   }
 }
-
 
