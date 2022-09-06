@@ -1,11 +1,8 @@
-import { filterByDirector, filterByDate, } from './data.js';
+import { filterByDirector, filterByDate, orderByRanking } from './data.js';
 import allData from './data/ghibli/ghibli.js';
-
-
 const container = document.getElementById("container")
 container.classList = "filmStyle"
 const allFilms = allData.films
-
 
 const generateHTML = (allFilms) => {     //arrow function
     const div = document.createElement("div")
@@ -17,11 +14,13 @@ const generateHTML = (allFilms) => {     //arrow function
     poster.classList.add('imagen');
     const release_date = document.createElement("h4") //año pelicula
     release_date.textContent = allFilms.release_date
-    div.append(poster, titleFilm, release_date)
+
+    const rt_score = document.createElement("h5") //año pelicula
+    rt_score.textContent = allFilms.rt_score
+    div.append(poster, titleFilm, release_date, rt_score)
     return div
 }
 allFilms.forEach(oneFilm => container.appendChild(generateHTML(oneFilm)))
-
 
 const filterDirector = document.getElementById("filterDirector")
 filterDirector.addEventListener("change", function (director) {
@@ -36,16 +35,8 @@ filterDate.addEventListener("change", function (releaseDate) {
     filterByDate(releaseDate.target.value, allFilms).forEach(oneFilm => container.appendChild(generateHTML(oneFilm)))
 })
 
- 
 const orderRanking = document.getElementById("orderRanking")
-orderRanking.addEventListener("change",function() {
+orderRanking.addEventListener("change", function (rt_score) {
     container.innerHTML = ""
-    //orderByRanking(rt_score.target.value, allFilms).forEach(oneFilm => container.appendChild(generateHTML(oneFilm)))
-   // console.log(allFilms.rt_score)
- //  this.carros.sort(((a, b) => a.modelo - b.modelo));
- //console.log(allFilms.sort(((a,b)=> a.rt_score - b.rt_score)))//menor a mayor
- console.log(allFilms.sort(((a,b)=> b.rt_score - a.rt_score)))//mayor a menor
+    orderByRanking(rt_score.target.value, allFilms).forEach(oneFilm => container.appendChild(generateHTML(oneFilm)))
 })
-
-// event target value
- //manejo de objetos JS como accesar a sus propiedades
