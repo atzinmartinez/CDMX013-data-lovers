@@ -1,4 +1,4 @@
-// estas funciones son de ejemplo
+
 
 export const filterByDirector = (nameDirector, allFilms) => {
   if (nameDirector == "allDirector") {
@@ -26,6 +26,7 @@ export const orderByRanking = (allRanking, allFilms) => {
   }
 }
 
+<<<<<<< HEAD
 // estadistica de edad promedio de personajes
 //acceder al array films>people>age
 
@@ -36,3 +37,5 @@ const sumWithInitial = array1.reduce(
   initialValue
 );*/
 
+=======
+>>>>>>> c3bfe66f03eb945f301c8d6160083da13538ab52
