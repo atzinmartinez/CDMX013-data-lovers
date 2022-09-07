@@ -21,30 +21,25 @@ body {
 
 .menuDirector {
     color: #ffffff;
-    transition-duration: 0.4s;
     position: absolute;
     width: 139px;
     height: 43px;
-    left: 900px;
-    top: 100px;
-    background-color: transparent;
+    left: 530px;
+    top: 58px;
     font-size: 20px;
-    border-radius: 4px;
-    text-align: center;
-    padding: 10px 24px;
-    border: 0cm transparent;
     font-family: 'Sen', sans-serif;
+    text-align: center;
 }
 
 .menuDate {
     color: #ffffff;
-    transition-duration: 0.4s;
+
     position: absolute;
     width: 139px;
     height: 43px;
-    left: 1150px;
-    top: 100px;
-    background-color: transparent;
+    left: 730px;
+    top: 50px;
+
     font-size: 20px;
     border-radius: 4px;
     text-align: center;
@@ -75,8 +70,8 @@ body {
     position: absolute;
     width: 139px;
     height: 43px;
-    left: 500px;
-    top: 100px;
+    left: 920px;
+    top: 50px;
     background-color: transparent;
     font-size: 20px;
     border-radius: 4px;
@@ -111,25 +106,65 @@ body {
     gap: 20px;
 }
 
+/*Año */
 h4 {
     color: rgb(0, 0, 0);
     font-family: 'Sen', sans-serif;
     font-size: 15px;
 }
 
+/* Score */
 h5 {
-    color: rgb(0, 0, 0);
-    position: inherit;
-    left: 900px;
-    top: 100px;
+    color: rgb(255, 255, 255);
     font-family: 'Sen', sans-serif;
     font-size: 20px;
-
-
+    background-color: rgba(64, 84, 124, 1);
+    border: 5px solid rgba(64, 84, 124, 1);
+    border-radius: 16px;
 }
 
+
+/* Titulo */
 h2 {
     color: rgb(0, 0, 0);
     font-family: 'Sen', sans-serif;
     font-size: 20px;
+}
+
+.menu {
+
+    font-size: medium;
+    font-family: 'Sen', sans-serif;
+    text-align: center;
+}
+
+.statistics {
+
+    color: #ffffff;
+    background-color: rgba(64, 84, 124, 1);
+    position: absolute;
+    width: 139px;
+    height: 30px;
+    left: 675px;
+    top: -13px;
+    font-size: 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Sen', sans-serif;
+
+
+}
+
+.totoro {
+    width: 50px;
+    position: absolute;
+    left: 1639px;
+    top: 70px;
+
+
+
+
+
+
+
 }

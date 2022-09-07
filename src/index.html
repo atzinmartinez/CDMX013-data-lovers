@@ -13,11 +13,12 @@
 <body>
   <header class="header">
     <img class="logo" src="img/logo.png" alt="Logo Ghibli">
+    <img class="totoro" src="img/totoro.png" alt="Logo totoro">
     <nav class="filter">
     </nav>
     <div class="menuDirector">
-      <label for="filterDirector">Director</label>
-      <select name="filterDirector" id="filterDirector">
+      <label for="filterDirector"> Director</label>
+      <select class="menu" name="filterDirector" id="filterDirector">
         <option placeholder value="allDirector">Todos</option>
         <option value="Hayao Miyazaki">Hayao Miyazaki</option>
         <option value="Isao Takahata">Isao Takahata</option>
@@ -29,7 +30,7 @@
     </div>
     <div class="menuDate">
       <label for="filterDate">Décadas</label>
-      <select name="filterDate" id="filterDate">
+      <select class="menu" name="filterDate" id="filterDate">
         <option placeholder value="allDate">Todas</option>
         <option value="1989">80s</option>
         <option value="1999">90s</option>
@@ -38,12 +39,18 @@
       </select>
     </div>
     <div class="menuRanking">
-      <label for="orderRanking">Ordenar</label>
-      <select name="orderRanking" id="orderRanking">
-        <option placeholder id=" value=" ordenar">Ordenar por Ranking</option>
+      <label for="orderRanking">Ranking</label>
+      <select class="menu" name="orderRanking" id="orderRanking">
         <option id="minor" value="menor">Menor a Mayor</option>
         <option id="mayor" value="mayor">Mayor a Menor</option>
       </select>
+
+      <button class="statistics" id="statistics">
+        Datos Extras
+      </button>
+
+
+
   </header>
   <section>
     <main id="container">

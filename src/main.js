@@ -20,6 +20,10 @@ const generateHTML = (allFilms) => {     //arrow function
     div.append(poster, titleFilm, release_date, rt_score)
     return div
 }
+
+
+
+
 allFilms.forEach(oneFilm => container.appendChild(generateHTML(oneFilm)))
 
 const filterDirector = document.getElementById("filterDirector")
@@ -40,3 +44,18 @@ orderRanking.addEventListener("change", function (rt_score) {
     container.innerHTML = ""
     orderByRanking(rt_score.target.value, allFilms).forEach(oneFilm => container.appendChild(generateHTML(oneFilm)))
 })
+<<<<<<< HEAD
+
+
+const statistics = document.getElementById("statistics")
+statistics.addEventListener("click", function () {
+    container.innerHTML = ""
+})
+
+/*let reformattedArray = allFilms.map(function (age) {
+    let rObj = {};
+    rObj[allFilms.people] = age.valor;
+    return rObj;
+})*/
+=======
+>>>>>>> c3bfe66f03eb945f301c8d6160083da13538ab52

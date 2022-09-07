@@ -26,3 +26,16 @@ export const orderByRanking = (allRanking, allFilms) => {
   }
 }
 
+<<<<<<< HEAD
+// estadistica de edad promedio de personajes
+//acceder al array films>people>age
+
+
+/*const initialValue = 0;
+const sumWithInitial = array1.reduce(
+  (previousValue, currentValue) => previousValue + currentValue,
+  initialValue
+);*/
+
+=======
+>>>>>>> c3bfe66f03eb945f301c8d6160083da13538ab52
