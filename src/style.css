@@ -47,8 +47,9 @@ body {
     border: 0cm transparent;
     font-family: 'Sen', sans-serif;
 }
+
 .menuRanking {
-    color :#ffffff;
+    color: #ffffff;
     transition-duration: 0.4s;
     position: absolute;
     width: 139px;
@@ -161,10 +162,17 @@ h2 {
     left: 1639px;
     top: 70px;
 
+}
 
+.fondo {
+    background-image: url(img/personajes.jpg);
+    width: 1074px;
+    height: 743px;
+    margin-top: 150px;
+    margin-left: 500px;
 
+}
 
-
-
-
+.prueba {
+    background-color: blue;
 }

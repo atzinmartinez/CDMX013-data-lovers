@@ -4,6 +4,8 @@ const container = document.getElementById("container")
 container.classList = "filmStyle"
 const allFilms = allData.films
 
+
+
 const generateHTML = (allFilms) => {     //arrow function
     const div = document.createElement("div")
     div.classList.add('poster'); //contenedor padre
@@ -21,7 +23,7 @@ const generateHTML = (allFilms) => {     //arrow function
     return div
 }
 
-
+// nodos javascript // pantalla html
 
 
 allFilms.forEach(oneFilm => container.appendChild(generateHTML(oneFilm)))
@@ -44,18 +46,51 @@ orderRanking.addEventListener("change", function (rt_score) {
     container.innerHTML = ""
     orderByRanking(rt_score.target.value, allFilms).forEach(oneFilm => container.appendChild(generateHTML(oneFilm)))
 })
-<<<<<<< HEAD
 
 
+
+
+//[forEach] {se puede acceder con .}
 const statistics = document.getElementById("statistics")
 statistics.addEventListener("click", function () {
-    container.innerHTML = ""
+    container.innerHTML = `<div class="fondo"></div>`
+    //container.innerHTML = `<p class="texto">"El promedio de edades es" ${redondeado} </p>`
+    //console.log("div", "p"); // auiq poner crear nodos
+
+    let sumage = 0;
+    let personajes = 0;
+    allFilms.forEach((film) => {
+        personajes = personajes + film.people.length
+        film.people.forEach((people) => {
+            let numeroage = parseInt(people.age)
+            if (isNaN(numeroage) == false) {
+                sumage = numeroage + sumage
+                console.log(numeroage)
+            }
+            // personajes = personajes ++
+        })
+    })
+    console.log("suma", sumage, "numero", personajes);
+
+    const division = sumage / personajes
+    let resultado = Math.round(division); //25
+    console.log(resultado);
+
+    return resultado
+
 })
 
-/*let reformattedArray = allFilms.map(function (age) {
-    let rObj = {};
-    rObj[allFilms.people] = age.valor;
-    return rObj;
-})*/
-=======
->>>>>>> c3bfe66f03eb945f301c8d6160083da13538ab52
+
+
+//generar nodo div para poner imagen y mandarlo a la pantalla
+/*
+if (input.value == "mostrar") {
+ personajes.style.visibility = "mostrar"
+ const image = document.createElement(src)
+ const personajes = allFilms.films.people.age
+ container.innerHTML = personajes
+ console.log(personajes);
+}*/
+
+
+
