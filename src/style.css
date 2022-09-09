@@ -168,11 +168,16 @@ h2 {
     background-image: url(img/personajes.jpg);
     width: 1074px;
     height: 743px;
-    margin-top: 150px;
+    margin-top: 180px;
     margin-left: 500px;
 
 }
 
-.prueba {
-    background-color: blue;
+.average {
+    background-color: #9F1D13;
+    text-align: center;
+    width: 457px;
+    height: 29px;
+    margin-top: -923px;
+    margin-left: 300px;
 }
