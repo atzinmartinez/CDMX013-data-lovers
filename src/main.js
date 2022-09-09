@@ -1,4 +1,4 @@
-import { filterByDirector, filterByDate, orderByRanking } from './data.js';
+import { filterByDirector, filterByDate, orderByRanking, statistics } from './data.js';
 import allData from './data/ghibli/ghibli.js';
 const container = document.getElementById("container")
 container.classList = "filmStyle"
@@ -51,32 +51,15 @@ orderRanking.addEventListener("change", function (rt_score) {
 
 
 //[forEach] {se puede acceder con .}
-const statistics = document.getElementById("statistics")
-statistics.addEventListener("click", function () {
-    container.innerHTML = `<div class="fondo"></div>`
+const nodostatics = document.getElementById("statistics")
+nodostatics.addEventListener("click", function () {
+
     //container.innerHTML = `<p class="texto">"El promedio de edades es" ${redondeado} </p>`
     //console.log("div", "p"); // auiq poner crear nodos
+    //let text = document.createTextNode("El promedio de edades en los personajes es " resultado);
+    const average = statistics(allFilms)
+    container.innerHTML = `<p class = "average">El promedio de las edades de los personajes es  ${average} </p> <div class="fondo"></div>`
 
-    let sumage = 0;
-    let personajes = 0;
-    allFilms.forEach((film) => {
-        personajes = personajes + film.people.length
-        film.people.forEach((people) => {
-            let numeroage = parseInt(people.age)
-            if (isNaN(numeroage) == false) {
-                sumage = numeroage + sumage
-                console.log(numeroage)
-            }
-            // personajes = personajes ++
-        })
-    })
-    console.log("suma", sumage, "numero", personajes);
-
-    const division = sumage / personajes
-    let resultado = Math.round(division); //25
-    console.log(resultado);
-
-    return resultado
 
 })
 

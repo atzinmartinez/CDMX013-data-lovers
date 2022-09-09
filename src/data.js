@@ -26,6 +26,34 @@ export const orderByRanking = (allRanking, allFilms) => {
   }
 }
 
+
+
+export const statistics = (allFilms) => {
+  let sumage = 0;
+  let personajes = 0;
+  allFilms.forEach((film) => {
+    personajes = personajes + film.people.length
+    film.people.forEach((people) => {
+      let numeroage = parseInt(people.age)
+      if (isNaN(numeroage) == false) {
+        sumage = numeroage + sumage
+        console.log(numeroage)
+      }
+      // personajes = personajes ++
+    })
+  })
+  console.log("suma", sumage, "numero", personajes);
+
+  const division = sumage / personajes
+  let resultado = Math.round(division); //25
+  console.log(resultado);
+  return resultado
+}
+
+
+
+
+
 // estadistica de edad promedio de personajes
 //acceder al array films>people>age
 

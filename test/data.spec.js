@@ -40,6 +40,20 @@ describe ("orderByRanking", () =>{
 
 })
 
+
+describe ("orderByRanking", () =>{
+  it ("ordena peliculas por ranking", () =>{
+
+    let data = [ {rt_score: 90}, {rt_score: 85}, {rt_score: 35} ] //preparar ambiente
+    let films = orderByRanking ("mayor", data) //ejecutar acción // 5
+    expect (films).toEqual([ {rt_score: 90}, {rt_score: 85}, {rt_score: 35} ]) //expectativa de que sucedio
+
+  })
+
+})
+
+
+
 //hacer un test 
 
 
