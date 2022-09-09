@@ -1,4 +1,4 @@
-import { filterByDirector, filterByDate } from '../src/data.js';
+import { filterByDirector, filterByDate, orderByRanking } from '../src/data.js';
 
 describe('filterByDirector', () => {
   const data= [
@@ -12,8 +12,8 @@ describe('filterByDirector', () => {
       expect (filterByDirector("Hiromasa Yonebayashi", data)).toEqual([{director:"Hiromasa Yonebayashi"}]);
   });
   it ("return allData", () => {
-    expect (filterByDirector ("Todos", data)).toHaveLength(2); // esperamos un 2
-    expect (filterByDirector ("Todos", data)).not.toHaveLength(3); // no esperamos un 3
+    expect (filterByDirector ("allDirector", data)).toHaveLength(2); // esperamos un 2  // revisar este test
+    // no esperamos un 3
 
   })});
   
@@ -27,6 +27,22 @@ describe('filterByDirector', () => {
     expect (filterByDate("1989", decade)).not.toEqual(["2010"]);
       })
   });
+
+
+describe ("orderByRanking", () =>{
+  it ("ordena peliculas por ranking", () =>{
+
+    let data = [ {rt_score: 90}, {rt_score: 85}, {rt_score: 50} ] //preparar ambiente
+    let films = orderByRanking ("menor", data) //ejecutar acción // 5
+    expect (films).toEqual([ {rt_score: 50}, {rt_score: 85}, {rt_score: 90} ]) //expectativa de que sucedio
+
+  })
+
+})
+
+//hacer un test 
+
+
     //esperamos que filterByDate devuelva 1 decada 
    
   // como configurar eslint para formatear en visual studio code

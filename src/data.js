@@ -26,10 +26,12 @@ export const orderByRanking = (allRanking, allFilms) => {
   }
 }
 
-<<<<<<< HEAD
 // estadistica de edad promedio de personajes
 //acceder al array films>people>age
 
+
+//entrar a la propiedad del objetoi y sacar el array age
+// pasar a numero y despues hacer filtro
 
 /*const initialValue = 0;
 const sumWithInitial = array1.reduce(
@@ -37,5 +39,3 @@ const sumWithInitial = array1.reduce(
   initialValue
 );*/
 
-=======
->>>>>>> c3bfe66f03eb945f301c8d6160083da13538ab52
