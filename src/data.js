@@ -1,5 +1,3 @@
-
-
 export const filterByDirector = (nameDirector, allFilms) => {
   if (nameDirector == "allDirector") {
     return allFilms
@@ -15,10 +13,7 @@ export const filterByDate = (date, allYears) => {
   }
 }
 export const orderByRanking = (allRanking, allFilms) => {
-  if (allRanking == "ordenar") {
-    return allFilms
-  }
-  if (allRanking == "menor") {
+  if (allRanking == "minor") {
     return allFilms.sort(((a, b) => a.rt_score - b.rt_score))
   }
   if (allRanking == "mayor") {
@@ -26,28 +21,25 @@ export const orderByRanking = (allRanking, allFilms) => {
   }
 }
 
-
-
 export const statistics = (allFilms) => {
-  let sumage = 0;
-  let personajes = 0;
+  let sumAge = 0;
+  let characters = 0;
   allFilms.forEach((film) => {
-    personajes = personajes + film.people.length
+    characters = characters + film.people.length
     film.people.forEach((people) => {
-      let numeroage = parseInt(people.age)
-      if (isNaN(numeroage) == false) {
-        sumage = numeroage + sumage
+      let ageNumber = parseInt(people.age)
+      if (isNaN(ageNumber) == false) {
+        sumAge = ageNumber + sumAge
         //console.log(numeroage)
       }
       // personajes = personajes ++
     })
   })
   //console.log("suma", sumage, "numero", personajes);
-
-  const division = sumage / personajes
-  let resultado = Math.round(division); //25
-  //console.log(resultado);
-  return resultado
+  const division = sumAge / characters
+  let result = Math.round(division); //25
+  //console.log(result);
+  return result
 }
 
 

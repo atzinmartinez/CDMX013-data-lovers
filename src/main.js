@@ -47,18 +47,13 @@ orderRanking.addEventListener("change", function (rt_score) {
     orderByRanking(rt_score.target.value, allFilms).forEach(oneFilm => container.appendChild(generateHTML(oneFilm)))
 })
 
-
-
-
 //[forEach] {se puede acceder con .}
-const nodostatics = document.getElementById("statistics")
-nodostatics.addEventListener("click", function () {
+const nodostatistics = document.getElementById("statistics")
+nodostatistics.addEventListener("click", function () {
 
-    //container.innerHTML = `<p class="texto">"El promedio de edades es" ${redondeado} </p>`
-    //console.log("div", "p"); // auiq poner crear nodos
-    //let text = document.createTextNode("El promedio de edades en los personajes es " resultado);
+
     const average = statistics(allFilms)
-    container.innerHTML = `<p class = "average">El promedio de las edades de los personajes es  ${average} </p> <div class="fondo"></div>`
+    container.innerHTML = `<p class = "average">El promedio de las edades de los personajes es de  ${average} años</p> <div class="characters"></div>`
 
 
 })
@@ -86,8 +81,11 @@ if (input.value == "mostrar") {
 condicionales
 funcion call back
 
-mapy for each 
+mapy for each
 expresiones y sentenicas
 datos primitivos y no primitivos
 
 manipulacion del DOM*/
+//container.innerHTML = `<p class="texto">"El promedio de edades es" ${redondeado} </p>`
+    //console.log("div", "p"); // auiq poner crear nodos
+    //let text = document.createTextNode("El promedio de edades en los personajes es " resultado);
