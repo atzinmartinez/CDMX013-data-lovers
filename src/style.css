@@ -87,12 +87,14 @@ body {
     width: 100%;
     height: 100%;
     place-items: center;
+
 }
 
 .imagen {
     width: 310px;
     height: 438px;
     border-radius: 15px;
+    border-style: outset;
 }
 
 .filmStyle {
@@ -146,8 +148,8 @@ h2 {
     position: absolute;
     width: 139px;
     height: 30px;
-    left: 675px;
-    top: -13px;
+    left: 1602px;
+    top: 51px;
     font-size: 20px;
     border-radius: 4px;
     text-align: center;
@@ -161,17 +163,18 @@ h2 {
     width: 50px;
     position: absolute;
     left: 1639px;
-    top: 70px;
+    top: 93px;
 
 }
 
-.fondo {
+.characters {
     background-image: url(img/personajes.jpg);
     width: 1074px;
     height: 743px;
     margin-top: 180px;
     margin-left: -814px;
-
+    border-radius: 15px;
+    border-style: groove;
 }
 
 .average {
