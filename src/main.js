@@ -77,3 +77,17 @@ if (input.value == "mostrar") {
 
 
 
+// cambiar texto promedio
+// cambiar boton datos extra
+// cambiar score a estrellas
+
+
+/*variables
+condicionales
+funcion call back
+
+mapy for each 
+expresiones y sentenicas
+datos primitivos y no primitivos
+
+manipulacion del DOM*/

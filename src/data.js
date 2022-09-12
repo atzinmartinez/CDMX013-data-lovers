@@ -37,16 +37,16 @@ export const statistics = (allFilms) => {
       let numeroage = parseInt(people.age)
       if (isNaN(numeroage) == false) {
         sumage = numeroage + sumage
-        console.log(numeroage)
+        //console.log(numeroage)
       }
       // personajes = personajes ++
     })
   })
-  console.log("suma", sumage, "numero", personajes);
+  //console.log("suma", sumage, "numero", personajes);
 
   const division = sumage / personajes
   let resultado = Math.round(division); //25
-  console.log(resultado);
+  //console.log(resultado);
   return resultado
 }
 
