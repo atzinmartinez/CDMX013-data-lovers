@@ -154,6 +154,7 @@ h2 {
     font-family: 'Sen', sans-serif;
 
 
+
 }
 
 .totoro {
@@ -169,15 +170,19 @@ h2 {
     width: 1074px;
     height: 743px;
     margin-top: 180px;
-    margin-left: 500px;
+    margin-left: -814px;
 
 }
 
 .average {
-    background-color: #9F1D13;
+    background-color: rgba(64, 84, 124, 1);
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "sen";
+    width: 485px;
+    height: 80px;
+    margin-top: -783px;
+    margin-left: 750px;
+    border-radius: 5px;
     text-align: center;
-    width: 457px;
-    height: 29px;
-    margin-top: -923px;
-    margin-left: 300px;
 }

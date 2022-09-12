@@ -1,4 +1,4 @@
-import { filterByDirector, filterByDate, orderByRanking } from '../src/data.js';
+import { filterByDirector, filterByDate, orderByRanking, statistics } from '../src/data.js';
 
 describe('filterByDirector', () => {
   const data= [
@@ -53,7 +53,19 @@ describe ("orderByRanking", () =>{
 })
 
 
+describe ("statistics", () => {
+  it ("promedia edades de todos los personajes", () =>{
 
+    
+
+let data = [{people:[{age:13}]},{people:[{age:25}]},{people:[{age:40}]}]
+let promedio = 26
+expect (statistics(data)).toEqual (promedio)
+
+  })
+
+}
+)
 //hacer un test 
 
 
