@@ -118,11 +118,12 @@ h4 {
 
 /* Score */
 h5 {
+    background-image: url(img/star.png);
+    background-size: 25px;
+    background-position: ;
     color: rgb(255, 255, 255);
     font-family: 'Sen', sans-serif;
     font-size: 20px;
-    background-color: rgba(64, 84, 124, 1);
-    border: 5px solid rgba(64, 84, 124, 1);
     border-radius: 16px;
 }
 
